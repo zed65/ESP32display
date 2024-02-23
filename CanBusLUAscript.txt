@@ -1,0 +1,45 @@
+function onTick()
+	clt = getSensor("Clt") or 0
+	lambda = getSensor("Lambda1") or 0
+	volt = getSensor("BatteryVoltage") or 0
+	map = getSensor("Map") or 0
+	duty = getOutput("injectorDutyCycle")
+	rpm = getSensor("Rpm") or 0
+	iat = getSensor("Iat") or 0
+	fuelp = getSensor ("FuelPressureLow") or 0
+	iat2 = iat + 100
+	clt2 = clt + 100
+	flex = getSensor("FuelEthanolPercent") or 0
+	fuelt = getSensor("FuelTemperature") or 0
+	vss = getSensor("VehicleSpeed") or 0
+	gear = getSensor("DetectedGear") or 0
+
+	txPayload = { }
+
+	txPayload[1] = volt
+	txPayload[2] = volt * 256
+	txPayload[3] = lambda
+	txPayload[4] = lambda * 256
+	txPayload[5] = map
+	txPayload[6] = clt2
+	txPayload[7] = duty
+	txPayload[8] = rpm
+
+	txCan(1, 0x600, 0, txPayload)
+
+	txPayload2 = { }
+
+	txPayload2 = { }
+	txPayload2[1] = rpm / 256
+	txPayload2[2] = rpm
+	txPayload2[3] = iat2
+	txPayload2[4] = fuelp
+	txPayload2[5] = flex
+	txPayload2[6] = fuelt
+	txPayload2[7] = vss
+	txPayload2[8] = gear
+
+	txCan(1, 0x601, 0, txPayload2)
+
+end
+
