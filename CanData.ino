@@ -1,4 +1,3 @@
-
 void getCan(){
 //Serial.print("Task1 running on core ");
 //Serial.println(xPortGetCoreID());

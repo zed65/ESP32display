@@ -1,6 +1,7 @@
 //Must use Partition Scheme Minimal SPIFFS or HUGE APP with BIG bootscreens
 //Must use Partition Scheme Minimal SPIFFS or HUGE APP with BIG bootscreens
 //Must use Partition Scheme Minimal SPIFFS or HUGE APP with BIG bootscreens
+
 #include <Wire.h>
 #include <SPI.h>
 #include <TFT_eSPI.h>
