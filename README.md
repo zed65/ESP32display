@@ -4,6 +4,7 @@ The display "should" work with any ECU that can output the Haltech dash protocol
 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/B2WpyWLizW0/0.jpg)](https://www.youtube.com/watch?v=B2WpyWLizW0)
+![alt text](https://github.com/zed65/ESP32display/blob/main/turboNe.jpg)
 
 It's intended to go here:
 ![alt text](https://github.com/zed65/ESP32display/blob/main/gaugeCluster.png?raw=true)
