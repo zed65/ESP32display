@@ -7,11 +7,11 @@
   else 
   
     createVNeedle();
-    val = (bat);
-    int angleMap = map(val, 10, 16, -43, 43);
+    val = (bat) * 10;
+    int angleMap = map(val, 100, 160, -43, 43);
     angleMap = constrain(angleMap, -43, 43);
     plotVGauge(angleMap);
-    delay(10);
+    //delay(10);
     
     }
    

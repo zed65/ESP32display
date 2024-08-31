@@ -3,7 +3,6 @@
   if (screen == 0){
       screen = 1;
       tft.fillScreen(TFT_BLACK);
-      
   }
   else 
 
@@ -12,7 +11,7 @@
     int angleMap = map(val, -10, 120, -43, 43);
     angleMap = constrain(angleMap, -43, 43);
     plotCGauge(angleMap);
-    delay(10);
+    //delay(10);
     
     }
    

@@ -11,8 +11,8 @@
     int angleMap = map(val, 0, 220, -110, 130);
     angleMap = constrain(angleMap, -110, 130);
     plotGauge(angleMap);
-    delay(10);
-    yield();
+    //delay(10);
+    //yield();
     }
    
 void plotGauge(int16_t angle){

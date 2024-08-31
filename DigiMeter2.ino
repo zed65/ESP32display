@@ -24,6 +24,8 @@ void kAss1(){
   dial.setFreeFont(FSS18);
   dial.setTextSize(3);
   dial.drawFloat(gear,0,70,10,FONT7);
+  dial.setTextColor(TFT_WHITE, TFT_BLACK);
+  dial.setFreeFont(FSS18);  
   dial.setTextSize(1);
   dial.drawString(str1, 65, 180, GFXFF);
   

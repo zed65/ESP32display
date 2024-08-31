@@ -6,13 +6,14 @@
   }
   else 
   tft.setTextPadding(tft.textWidth("8888", 4));
+    dial.setTextColor(TFT_WHITE, TFT_BLACK);
     createLNeedle();
     val = (afr * 100);
     int angleMap = map(val, 70, 130, -90, 90);
     angleMap = constrain(angleMap, -90, 90);
     plotLGauge(angleMap);
     delay(10);
-    yield();
+    //yield();
     }
    
 void plotLGauge(int16_t angle){

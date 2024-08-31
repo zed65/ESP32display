@@ -6,7 +6,7 @@
   }
   else 
   tft.setTextPadding(tft.textWidth("8888", 4));
-      
+    
     createDNeedle();
     val = (du);
     int angleMap = map(val, 0, 100, -90, 110);
@@ -29,7 +29,7 @@ void createDDial(){
   tft.setPivot(120,120);
   dial.fillSprite(TFT_TRANSPARENT);
   dial.pushImage(0,0,240,170,duty); 
-  tft.drawFloat(du,0,70,180,6);
+  tft.drawFloat(du,1,70,180,6);
   }
 
 void createDNeedle(){
