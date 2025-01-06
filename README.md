@@ -8,3 +8,6 @@ The display "should" work with any ECU that can output the Haltech dash protocol
 
 It's intended to go here:
 ![alt text](https://github.com/zed65/ESP32display/blob/main/gaugeCluster.png?raw=true)
+
+
+![alt text](https://github.com/zed65/ESP32display/blob/main/ESP32displaySCH.png)
